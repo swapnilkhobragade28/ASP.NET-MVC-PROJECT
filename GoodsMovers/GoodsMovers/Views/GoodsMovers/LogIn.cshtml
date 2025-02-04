@@ -1,0 +1,143 @@
+﻿@model GoodsMovers.Models.LoginDetails
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/Content/homepage.css" />
+
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+
+     
+</head>
+
+<style>
+
+    /* form div --------------------------------------------------------------------------------------------- */
+    .div_loginform_cls {
+        margin: 200px 20px 20px 380px;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+
+        .div_loginform_cls:hover {
+            background-color: black;
+        }
+
+    h1 {
+        color: white;
+    }
+
+    .txt_userpass {
+        width: 400px;
+        height: 30px;
+        background: none;
+        margin: 20px 20px 20px 20px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 18px;
+    }
+
+    .lbl_userpass {
+        font-size: 20px;
+        margin: 20px 20px 20px 20px;
+        color: white;
+    }
+
+    #btn_login {
+        height: 40px;
+        width: 200px;
+        background: none;
+        color: white;
+        margin: 20px 30px 0px 20px;
+        border: none;
+        font-size: 20px;
+    }
+
+        #btn_login:hover {
+            border-radius: 20px;
+            border: solid white 1px;
+        }
+</style>
+<body>
+
+    <!-- relative div block -->
+    <div id="" class="div_back_img_cls">
+        <img src="~/Pictures/bodyimg.jpg" height="100%" width="100%">
+    </div>
+
+
+    <div style="position: absolute; top:3px">
+
+        <!-- HEADER ======================================================================= -->
+        <div style="position:fixed;">
+            <header>
+                <nav>
+                    <!-- <h1>GoodMoverz</h1> -->
+                    <img width="180px" height="100px" src="~/Pictures/logo.png" alt="" style="margin-left: 50px;">
+                    <div class="nav">
+                        <li class="nav-item dropdown mt-4">
+                            <a class="nav-link dropdown-toggle drd_signup_clss" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sign Up
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>as a Customer</li>
+                                <li>as a Delivery Person</li>
+                            </ul>
+                        </li>
+                        <li><a>Log in</a></li>
+                    </div>
+                    <li><a>About Us</a></li>
+                </nav>
+            </header>
+        </div>
+        <!-- ====================================================================== -->
+        <!--------Login form ------------------------------------------------------------------------------------------------>
+        <form action="LogIn" method="post">
+
+            @if (TempData.ContainsKey("alertMessage"))
+            {
+                @*<p>@TempData["alertMessage"]</p>*@
+                <script>
+            alert('@Html.Raw(TempData["alertMessage"])')
+                </script>
+            }
+
+            <div id="" class="div_loginform_cls">
+
+                <div align="center">
+                    <h1> Login Here</h1>
+
+                    <div class="div_userpass">
+                        @Html.LabelFor(model => model.email, "Username :", htmlAttributes: new { @class = "lbl_userpass" })
+                        @Html.EditorFor(model => model.email, new { htmlAttributes = new { @id = "txt_username", @class = "txt_userpass", placeholder = "           Enter your email id" } })
+                    </div>
+
+
+                    <div class="div_userpass">
+                        @Html.LabelFor(model => model.email, "Password :", htmlAttributes: new { @class = "lbl_userpass" })
+                        <input type="password" id="txt_getpassword" onchange="getLoginPassword(this)" class="txt_userpass" placeholder="            Enter your password" />
+                    </div>
+                    
+                    <input id="btn_login" type="submit" value="Log In" onclick="validationsForLogin()">
+
+                </div>
+            </div>
+            <div style="visibility:hidden">
+                @Html.EditorFor(model => model.password, new { htmlAttributes = new { @id = "txt_password", @class = "txt_userpass", placeholder = "            Enter your password" } })
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+

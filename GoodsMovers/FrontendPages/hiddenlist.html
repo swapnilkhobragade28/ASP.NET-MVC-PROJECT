@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function liststyle(){
+            document.getElementById('sublist').style.visibility="visible";
+        }
+    </script>
+
+</head>
+
+
+<style>
+
+ul{
+    list-style: none;
+}
+
+#mainlist{
+
+}
+
+#signuplist{
+
+}
+
+#sublist{
+    visibility: hidden;
+}
+
+</style>
+<body>
+    <ul id="mainlist">
+        <li id="signuplist" onclick="liststyle()">Sign up</li>
+        <ul id="sublist">
+            <li>For Customer</li>
+            <li>For Enterprise</li>
+        </ul>
+    </ul>
+</body>
+</html>

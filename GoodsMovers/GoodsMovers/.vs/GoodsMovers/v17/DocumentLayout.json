@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|d:\\study\\my mini project\\goodsmovers\\goodsmovers\\views\\goodsmovers\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|solutionrelative:views\\goodsmovers\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\controllers\\goodsmoverscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|solutionrelative:controllers\\goodsmoverscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|d:\\study\\my mini project\\goodsmovers\\goodsmovers\\views\\goodsmovers\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|solutionrelative:views\\goodsmovers\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\scripts\\validationsfunctions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|solutionrelative:scripts\\validationsfunctions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\views\\goodsmovers\\pass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B53CE48-51E4-42A7-BB2F-D73E284E17B9}|GoodsMovers.csproj|solutionrelative:views\\goodsmovers\\pass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Views\\GoodsMovers\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "Views\\GoodsMovers\\HomePage.cshtml",
+              "ToolTip": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Views\\GoodsMovers\\HomePage.cshtml",
+              "RelativeToolTip": "Views\\GoodsMovers\\HomePage.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwDYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T03:15:16.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ValidationsFunctions.js",
+              "DocumentMoniker": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Scripts\\ValidationsFunctions.js",
+              "RelativeDocumentMoniker": "Scripts\\ValidationsFunctions.js",
+              "ToolTip": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Scripts\\ValidationsFunctions.js",
+              "RelativeToolTip": "Scripts\\ValidationsFunctions.js",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAIwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-03T12:02:02.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pass.cshtml",
+              "DocumentMoniker": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Views\\GoodsMovers\\pass.cshtml",
+              "RelativeDocumentMoniker": "Views\\GoodsMovers\\pass.cshtml",
+              "ToolTip": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Views\\GoodsMovers\\pass.cshtml",
+              "RelativeToolTip": "Views\\GoodsMovers\\pass.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T14:38:38.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogIn.cshtml",
+              "DocumentMoniker": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Views\\GoodsMovers\\LogIn.cshtml",
+              "RelativeDocumentMoniker": "Views\\GoodsMovers\\LogIn.cshtml",
+              "ToolTip": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Views\\GoodsMovers\\LogIn.cshtml",
+              "RelativeToolTip": "Views\\GoodsMovers\\LogIn.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAkwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T14:34:17.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GoodsMoversController.cs",
+              "DocumentMoniker": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Controllers\\GoodsMoversController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GoodsMoversController.cs",
+              "ToolTip": "D:\\STUDY\\My Mini Project\\GoodsMovers\\GoodsMovers\\Controllers\\GoodsMoversController.cs",
+              "RelativeToolTip": "Controllers\\GoodsMoversController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwEkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T13:45:37.232Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

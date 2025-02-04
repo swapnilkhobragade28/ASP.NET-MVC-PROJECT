@@ -1,0 +1,85 @@
+﻿
+body {
+    background-color: rgb(137, 221, 193);
+}
+
+/* HEADER ============================================================================================ */
+
+
+header {
+    width: 1400px;
+    background-color: rgb(137, 221, 193);
+}
+
+li {
+    list-style: none;
+    margin: 30px 20px 0px 0px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    li:hover {
+        color: blue;
+        font-size: larger;
+    }
+
+.dropdown_list {
+    margin: 20px;
+}
+
+nav {
+    display: inline-flex;
+}
+
+.nav {
+    display: inline-flex;
+    margin: 0px 450px 0px 340px;
+}
+
+.drd_signup_clss {
+    color: black;
+}
+/* ============================================================================================== */
+
+
+/* CALCULATE CHARGES BLOCK ======================================================================================== --> */
+#homepage_calculatingcharges {
+    margin: 490px 0px 20px 50px;
+    padding: 25px;
+    width: 1250px;
+    display: inline-flex;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#btn {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(18, 212, 226);
+    color: solid black 4px;
+    margin: 20px 30px 0px 20px;
+}
+
+.homepage_textbox {
+    margin: 20px 20px 20px 0px;
+    height: 26px;
+}
+
+#vehicleType {
+    width: 160px;
+    height: 26px;
+}
+
+/* =========================================================================================== --> */
+
+.div_back_img_cls {
+    position: relative;
+    top: 100px;
+}
+
+/* CARDS ================================================================================================ */
+
+.cards_booknow_cls {
+    display: inline-flex;
+    margin: 20px 0px 20px 170px;
+}

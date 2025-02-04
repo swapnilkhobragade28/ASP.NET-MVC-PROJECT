@@ -1,0 +1,164 @@
+﻿@model GoodsMovers.Models.LoginDetails
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Delivery Person</title>
+
+    <!-- bootstrap package------------------------------------------------------------------------------------>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+
+    <!--- external style and script------------------------------------------------------------------------------>
+    <link rel="stylesheet" href="~/Content/SignUp.css" />
+    <script src="~/Scripts/ValidationsFunctions.js" ></script>
+
+
+</head>
+<body>
+
+    <form action="SignUpDeliveryPerson" method="post">
+
+        @if (TempData.ContainsKey("AlertMsg"))
+        {
+            @*<p>@TempData["alertMessage"]</p>*@
+            <script>
+             alert('@Html.Raw(TempData["AlertMsg"])')
+            </script>
+        }
+
+        <!-- relative div block -->
+        <div id="" class="div_back_img_cls">
+            <img src="~/Pictures/bodyimg.jpg" height="100%" width="100%">
+        </div>
+
+
+        <div style="position: absolute; top:3px">
+
+            <!-- HEADER ======================================================================= -->
+            <div style="position:fixed;">
+                <header>
+                    <nav>
+                        <!-- <h1>GoodMoverz</h1> -->
+                        <img width="180px" height="100px" src="~/Pictures/logo.png" alt="" style="margin-left: 50px;">
+                        <div class="nav">
+                            <li class="nav-item dropdown mt-4">
+                                <a class="nav-link dropdown-toggle drd_signup_clss" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sign Up
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown_list">@Html.ActionLink("as a Customer", "SignUpCustomer")</li>
+                                    <li class="dropdown_list">@Html.ActionLink("as a Delivery Person", "SignUpDeliveryPerson")</li>
+                                </ul>
+                            </li>
+                            <li><a>Log in</a></li>
+                        </div>
+                        <li><a>About Us</a></li>
+                    </nav>
+                </header>
+            </div>
+            <!-- ====================================================================== -->
+            <!-- ------------------------------------------------------------------------- -->
+            <!-- sign up form ========================================================================= -->
+            <div id="" class="div_signupform_cls">
+
+                <div align="center">
+                    <h1>Sign Up</h1>
+                </div>
+
+                <div class="mb-3 txt_style">
+                    @Html.LabelFor(model => model.email, "Email :", htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control", @id = "txt_email", placeholder = "Enter your email address" } })
+                    @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.name, "Name :", htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", @id = "txt_name", placeholder = "Enter your name" } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.city, "City :", htmlAttributes: new { @class = "form-label" })
+                    <select id="drd_city" class="form-control" onchange="getDeliveryPersonCity(this)">
+                        <option selected disabled hidden>Choose your city</option>
+                        <option>Pune</option>
+                        <option>Mumbai</option>
+                        <option>Nagpur</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.phone, "Phone :", htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.phone, new { htmlAttributes = new { @class = "form-control", @id = "txt_phone", placeholder = "Enter your phone no" } })
+                    @Html.ValidationMessageFor(model => model.phone, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.vehicleType, "Vehicle Type :", htmlAttributes: new { @class = "form-label" })
+                    <select id="drd_vehicletype" onchange="getVehicleType(this)" class="form-control">
+                        <option value="" disabled selected hidden> Choose your vehicle type</option>
+                        <option>bike</option>
+                        <option>AutoRikshaw</option>
+                        <option>truck</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.vehicleNo, "Vehicle No :", htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.vehicleNo, new { htmlAttributes = new { @class = "form-control", @id = "txt_vehicleno", placeholder = "Enter your vehicle no" } })
+                    @Html.ValidationMessageFor(model => model.vehicleNo, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.licenceNo, "Licence No :", htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.licenceNo, new { htmlAttributes = new { @class = "form-control", @id = "txt_licenceno", placeholder = "Enter your licence no" } })
+                    @Html.ValidationMessageFor(model => model.licenceNo, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.password, "Password :", htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", @id = "txt_pass", placeholder = "Enter your password" } })
+                    @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Confirm Password :</label>
+                    <input type="password" class="form-control " id="txt_repass" placeholder="Enter your name">
+                </div>
+
+                <div>
+                    <input type="checkbox" checked id="chk_terms_cls" style="color: black" />
+                    <label>I agree to the Terms & Privacy Policy</label>
+                </div>
+
+                <div align="center">
+                    <input type="submit" value="Create Account" class="btn btn-success my-4" id="btn_crt" onclick="ValidationsForDeliveryPerson()" />
+                </div>
+
+
+            </div>
+            <!-- =============================================================================== -->
+
+        </div>
+
+        <!--- the model vehicle type value automatically change as per value change in dropdown list-->
+        <div class="mb-3" style="visibility:visible ; margin-top 700px">
+            @Html.EditorFor(model => model.city, new { htmlAttributes = new { @class = "form-control", id = "txt_city", placeholder = "Enter your city" } })
+            @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
+
+            @Html.EditorFor(model => model.vehicleType, new { htmlAttributes = new { @class = "form-control", @id = "vehicleTypeInput", placeholder = "bike , autorikshaw, or truck" } })
+            @Html.ValidationMessageFor(model => model.vehicleType, "", new { @class = "text-danger" })
+        </div>
+
+
+    </form>
+</body>
+</html>
+

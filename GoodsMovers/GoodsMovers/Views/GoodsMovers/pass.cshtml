@@ -1,0 +1,16 @@
+﻿
+@{
+    Layout = null;
+}
+
+<h2>You have logged in successfully</h2>
+
+<h6>@TempData["userEmail"]</h6>
+
+@if(TempData.ContainsKey("userEmail"))
+            {
+                <script>
+                    alert('@Html.Raw(TempData["userEmail"])');
+                </script>
+            }
+
